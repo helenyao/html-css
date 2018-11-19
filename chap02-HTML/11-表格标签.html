@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 基本结构 -->
+    <table border="1">
+        <tr>
+            <td>Helen</td>
+            <td>18</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>Mike</td>
+            <td>20</td>
+            <td>男</td>
+        </tr>
+    </table>
+
+    <!-- 完整结构 -->
+    <table border="1">
+        <caption>表格标题</caption>
+        <thead>
+            <tr>
+                <th>班级</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">一年一</th>
+                <td>Helen</td>
+                <td>18</td>
+                <td>女</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>20</td>
+                <td>男</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>统计</th>
+                <td colspan="3">2人</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- 跨行合并 -->
+    <table border="1">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B1</td>
+        </tr>
+        <tr>
+            <!-- <td>A2</td> -->
+            <td>B2</td>
+        </tr>
+    </table>
+
+    <!-- 跨列合并 -->
+    <table border="1">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+        </tr>
+        <tr>
+            <td colspan="2">2</td>
+        </tr>
+    </table>
+</body>
+
+</html>

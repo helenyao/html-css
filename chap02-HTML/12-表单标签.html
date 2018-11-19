@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <form name="regform" action="register.html" method="get">
+        <fieldset>
+            <legend>基本信息</legend>
+            <label for="username">用户名</label>
+            <input type="text" id="username" name="username" ><br><br>
+            <label for="password">密码 </label>
+            <input type="password" id="password" name="password"><br><br>
+
+            性别
+            <input type="radio" name="gender" value="male" id="male" >
+            <label for="male">男</label>
+            <input type="radio" name="gender" value="female" id="female" checked>
+            <label for="female">女</label> 
+            <br><br>
+        </fieldset>
+        
+        <fieldset >
+            <legend>详细信息</legend>
+            爱好 	
+            <input type="checkbox" name="hobby" value="zq">足球
+            <input type="checkbox" name="hobby" value="lq">篮球
+            <input type="checkbox" name="hobby" value="ymq" checked>羽毛球
+            <input type="checkbox" name="hobby" value="ppq" checked>乒乓球
+            <br><br>
+        
+        
+            职业
+            <select name="job">
+                <option value="1">公务员</option>
+                <option value="2">事业单位</option>
+                <option value="3">销售人员</option>
+                <option value="4" selected>技术人员</option>
+            </select>  
+            <br><br>
+
+            关注品牌
+            <select name="brand" multiple>
+                <option value="1">沃尔沃</option>
+                <option value="2">奥迪</option>
+                <option value="3">本田</option>
+                <option value="4">丰田</option>
+            </select>  
+            <br><br>
+
+            所在城市
+            <select name="job">
+                <option value="1">北京</option>
+                <option value="2">上海</option>
+                <optgroup label="广东">
+                    <option value="3">广州</option>
+                    <option value="4">深圳</option>  
+                </optgroup>
+                <optgroup label="黑龙江">
+                        <option value="5">哈尔滨</option>
+                        <option value="6">大庆</option>  
+                    </optgroup>
+            </select>
+            <br><br>
+            
+ 
+            <label for="info">自我介绍</label>  
+            <textarea id="info" name="info" cols="100" rows="10">这家伙很懒</textarea>
+            <br><br>
+
+            <label for="avatar">个人头像</label>  
+            <input type="file" id="avatar" name="avatar">
+
+        </fieldset>
+        
+
+        <input type="submit" value="注册" >
+        <input type="reset" >
+        <input type="button" value="按钮" >
+        <input type="image" src="btn.png" alt="注册">
+
+        <br><br>
+
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <button type="button">按钮</button>
+        
+    </form>
+</body>
+</html>
